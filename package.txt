@@ -1,0 +1,4 @@
+com.sec.android.app.launcher
+com.sec.android.app.launcher.recents.overlay
+com.sec.android.provider.badge
+org.blinksd.settings

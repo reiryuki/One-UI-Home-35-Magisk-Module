@@ -1,0 +1,16 @@
+# debug
+allow system_server system_file file write
+
+# context
+create { system_lib_file vendor_file vendor_configs_file vendor_overlay_file }
+allow { system_file system_lib_file vendor_file vendor_configs_file vendor_overlay_file } labeledfs filesystem associate
+allow init { system_file system_lib_file vendor_file vendor_configs_file vendor_overlay_file } { dir file } relabelfrom
+
+# dir
+allow { system_app priv_app platform_app untrusted_app_29 untrusted_app_27 untrusted_app } { blkio_dev sysfs_batteryinfo sysfs_battery_supply } dir search
+
+# file
+allow { system_app priv_app platform_app untrusted_app_29 untrusted_app_27 untrusted_app } bluetooth_prop file read
+allow { system_app priv_app platform_app untrusted_app_29 untrusted_app_27 untrusted_app } proc_filesystems file open
+
+
