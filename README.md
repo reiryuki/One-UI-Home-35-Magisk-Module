@@ -17,11 +17,10 @@
 
 ## Requirements
 - NOT in One UI nor Touchwiz ROM
-- Android 13 (SDK 33) and up (Not tested yet in SDK 34 nor 33)
+- Android 15 (SDK 35) and up
 - Magisk or KernelSU installed
 - One UI Core Magisk Module installed https://github.com/reiryuki/One-UI-Core-Magisk-Module
 - Add media page to Home screen option requires Google app installed https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox or ported Samsung News/Free/Daily/Bixby Home app (com.samsung.android.app.spage) if it's exist.
-- Recents provider requires Android 15 (SDK 35) and up
 - Full gesture navigation and double tap to sleep requires root permission (except in AOSP signatured ROM)
 
 ## Installation Guide & Download Link
