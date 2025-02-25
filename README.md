@@ -53,6 +53,7 @@
 ## Known Issues
 - Edge panels doesn't work
 - Recents provider doesn't launch sometimes
+- Recents tumbnails are blacked out in some ROMs
 
 ## Support & Bug Report
 - https://t.me/ryukinotes/54
