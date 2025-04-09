@@ -1,7 +1,7 @@
 id=OneUIHome
 name=One UI Home 35
-version=v0.7
-versionCode=7
+version=v0.8
+versionCode=8
 author=Rei Ryuki the Fixer
 description=Home launcher app target SDK 35 by Samsung Electronics Co., Ltd. ported for any Android 15 (SDK 35) and up.
 
