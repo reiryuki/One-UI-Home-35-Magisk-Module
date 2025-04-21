@@ -239,6 +239,9 @@ if [ "$RECENTS" == true ]; then
     mv -f $FILE $FILE.bak
   done
   ui_print " "
+  DIR=/overlay/PixelConfigOverlayCommon
+  [ -d /product$DIR ] && REPLACE="$REPLACE /product$DIR"
+  [ -d /vendor$DIR ] && REPLACE="$REPLACE /vendor$DIR"
 else
   rm -rf $MODPATH/system/product
 fi
@@ -365,7 +368,6 @@ extract_lib
 rm -f `find $MODPATH/system -type f -name extract`
 # hide
 hide_oat
-
 
 
 

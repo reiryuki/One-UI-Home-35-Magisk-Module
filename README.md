@@ -54,6 +54,7 @@
 - Edge panels doesn't work
 - Recents provider doesn't launch sometimes
 - Recents tumbnails are blacked out in some ROMs
+- Does not support navbar overlay in QPR2 ROMs and up if recents provider is activated
 
 ## Support & Bug Report
 - https://t.me/ryukinotes/54
