@@ -53,7 +53,7 @@
 ## Known Issues
 - Edge panels doesn't work
 - Recents provider doesn't launch sometimes
-- Recents tumbnails are blacked out in some ROMs
+- Recents tumbnails are blacked out in some ROMs. If your device support vulkan, this module https://github.com/reiryuki/SKIA-UI-Renderer-Enabler-Magisk-Module may fix that.
 - Does not support navbar overlay in QPR2 ROMs and up if recents provider is activated
 
 ## Support & Bug Report

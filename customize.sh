@@ -243,16 +243,12 @@ if [ "$RECENTS" == true ]; then
   [ -d /product$DIR ] && REPLACE="$REPLACE /product$DIR"
   [ -d /vendor$DIR ] && REPLACE="$REPLACE /vendor$DIR"
   [ -d /odm$DIR ] && REPLACE="$REPLACE /system/odm$DIR"
+  [ -d /vendor/odm$DIR ] && REPLACE="$REPLACE /vendor/odm$DIR"
 else
   rm -rf $MODPATH/system/product
 fi
 if [ "$RECENTS" == true ]; then
-  if [ ! -d /product/overlay ]\
-  || [ "`grep_prop overlay.location $OPTIONALS`" == vendor ]; then
-    ui_print "- Using /vendor/overlay/ instead of /product/overlay/"
-    mv -f $MODPATH/system/product $MODPATH/system/vendor
-    ui_print " "
-  elif [ "`grep_prop overlay.location $OPTIONALS`" == odm ]\
+  if [ "`grep_prop overlay.location $OPTIONALS`" == odm ]\
   && [ -d /odm/overlay ]; then
     if grep /odm /data/adb/magisk/magisk\
     || grep /odm /data/adb/magisk/magisk64\
@@ -265,6 +261,11 @@ if [ "$RECENTS" == true ]; then
       ui_print "  the version doesn't support /odm"
       ui_print " "
     fi
+  elif [ ! -d /product/overlay ]\
+  || [ "`grep_prop overlay.location $OPTIONALS`" == vendor ]; then
+    ui_print "- Using /vendor/overlay/ instead of /product/overlay/"
+    mv -f $MODPATH/system/product $MODPATH/system/vendor
+    ui_print " "
   fi
 fi
 
