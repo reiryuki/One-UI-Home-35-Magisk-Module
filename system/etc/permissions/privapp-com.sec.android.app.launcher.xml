@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <permissions>
     <privapp-permissions package="com.sec.android.app.launcher">
+        <permission name="android.permission.REAL_GET_TASKS"/>
         <permission name="android.permission.STATUS_BAR"/>
         <permission name="android.permission.SET_UNRESTRICTED_GESTURE_EXCLUSION"/>
         <permission name="android.permission.START_ACTIVITIES_FROM_BACKGROUND"/>
