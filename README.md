@@ -18,7 +18,7 @@
 ## Requirements
 - NOT in One UI nor Touchwiz ROM
 - Android 15 (SDK 35) and up
-- Magisk or KernelSU installed
+- Magisk or Kitsune Mask or KernelSU or Apatch installed
 - One UI Core Magisk Module installed https://github.com/reiryuki/One-UI-Core-Magisk-Module
 - Add media page to Home screen option requires Google app installed https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox or ported Samsung News/Free/Daily/Bixby Home app (com.samsung.android.app.spage) if it's exist.
 - Full gesture navigation and double tap to sleep requires root permission (except in AOSP signatured ROM)
@@ -28,7 +28,7 @@
 - Reboot
 - Install One UI Core Magisk Module first: https://github.com/reiryuki/One-UI-Core-Magisk-Module
 - If you want to activate the recents provider, READ Optionals bellow!
-- Install this module https://www.pling.com/p/2262533/ via Magisk app or KernelSU app or Recovery if Magisk installed
+- Install this module https://www.pling.com/p/2262533/ via Magisk app or Kitsune Mask app or KernelSU app or Apatch app or Recovery if Magisk or Kitsune Mask installed
 - If you are using KernelSU, you need to disable Unmount Modules by Default in KernelSU app settings
 - Reboot
 - If you are using KernelSU, you need to allow superuser list manually all package name listed in package.txt (enable show system apps) and reboot afterwards
@@ -53,7 +53,7 @@
 ## Known Issues
 - Edge panels doesn't work
 - Recents provider doesn't launch sometimes
-- Recents tumbnails are blacked out in some ROMs. If your device support vulkan, this module https://github.com/reiryuki/SKIA-UI-Renderer-Enabler-Magisk-Module may fix that.
+- Recents tumbnails are blacked out in some ROMs. If your device supports vulkan, this module https://github.com/reiryuki/SKIA-UI-Renderer-Enabler-Magisk-Module may fix that.
 - Does not support navbar overlay in QPR2 ROMs and up if recents provider is activated
 
 ## Support & Bug Report
