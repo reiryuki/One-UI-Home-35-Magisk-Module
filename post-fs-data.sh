@@ -7,6 +7,10 @@ set -x
 
 # var
 ABI=`getprop ro.product.cpu.abi`
+if [ ! -d $MODPATH/vendor ]\
+|| [ -L $MODPATH/vendor ]; then
+  MODSYSTEM=/system
+fi
 
 # function
 permissive() {
@@ -57,14 +61,8 @@ for DIR in $DIRS; do
   chown 0.2000 $DIR
 done
 chcon -R u:object_r:system_lib_file:s0 $MODPATH/system/lib*
-if [ -L $MODPATH/system/vendor ]\
-&& [ -d $MODPATH/vendor ]; then
-  chcon -R u:object_r:vendor_file:s0 $MODPATH/vendor
-  chcon -R u:object_r:vendor_overlay_file:s0 $MODPATH/vendor/overlay
-else
-  chcon -R u:object_r:vendor_file:s0 $MODPATH/system/vendor
-  chcon -R u:object_r:vendor_overlay_file:s0 $MODPATH/system/vendor/overlay
-fi
+chcon -R u:object_r:vendor_file:s0 $MODPATH$MODSYSTEM/vendor
+chcon -R u:object_r:vendor_overlay_file:s0 $MODPATH$MODSYSTEM/vendor/overlay
 
 # cleaning
 FILE=$MODPATH/cleaner.sh
