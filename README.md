@@ -14,6 +14,10 @@ Home launcher app by Samsung Electronics Co., Ltd. ported and integrated as a Ma
 
 ## Changelog
 
+v1.8
+- Extend startRecentsTransition timeout & open timeout end
+- Fix rootView isn't valid
+
 v1.7
 - Update libmagiskpolicy.so from Magisk (stable) 30.7 (30700)
 - Fix crash
@@ -48,15 +52,12 @@ v0.9
 - Fix crash AbstractMethodError setHandoffHandler
 - Removes conflicted overlay PixelConfigOverlayCommon.apk systemlessly if oneui.recents=1
 
-v0.8
-- Android 15 QPR2 (BP1A) support
-
 ## Screenshots
 https://t.me/ryukimodsscreenshots/57
 
 ## Requirements
 - NOT in One UI nor Touchwiz ROM
-- Android 15 (SDK 35) and up
+- Android 15 (SDK 35) only
 - Magisk or Kitsune Mask or KernelSU or Apatch installed
 - One UI Core Magisk Module installed https://github.com/reiryuki/One-UI-Core-Magisk-Module
 - Add media page to Home screen option requires Google app installed https://play.google.com/store/apps/details?id=com.google.android.googlequicksearchbox or ported Samsung News/Free/Daily/Bixby Home app (com.samsung.android.app.spage) if it's exist.
@@ -68,7 +69,7 @@ https://t.me/ryukimodsscreenshots/57
 - If you are using KernelSU, you need to disable Unmount Modules by Default in KernelSU app settings and install https://github.com/KernelSU-Modules-Repo/meta-overlayfs or https://github.com/KernelSU-Modules-Repo/magic_mount_rs or https://github.com/KernelSU-Modules-Repo/hybrid_mount first depending on ROM compatibility
 - Install One UI Core Magisk Module first: https://github.com/reiryuki/One-UI-Core-Magisk-Module
 - If you want to activate the recents provider, READ Optionals bellow!
-- Install this module https://devuploads.com/umue2h603uw4 via Magisk app or Kitsune Mask app or KernelSU app or Apatch app or Recovery if Magisk or Kitsune Mask installed
+- Install this module via Magisk app or Kitsune Mask app or KernelSU app or Apatch app or Recovery if Magisk or Kitsune Mask installed
 - Reboot
 - If you are using KernelSU, you need to allow superuser list manually all package name listed in package.txt (enable show system apps) and reboot afterwards
 - Change your default home to this launcher via Settings app (or you can copy the content of default.sh and paste it to Terminal/Termux app. Type su and grant root first!)
