@@ -14,6 +14,9 @@ Home launcher app by Samsung Electronics Co., Ltd. ported and integrated as a Ma
 
 ## Changelog
 
+v2.1
+- Fix recents provider doesn't launch sometimes with `su -c setprop persist.disable_recents_animation 1` (For more details, read Troubleshootings below)
+
 v2.0
 - Fix wrong logic in semDisplayDeviceType & getTopFocusedDisplayId method
 
@@ -48,9 +51,6 @@ v1.2
 - Revert layout params alpha to 1
 - Fix selinux denial
 
-v1.1
-- Re-fix conflict with PixelConfigOverlayCommon.apk
-
 ## Screenshots
 https://t.me/ryukimodsscreenshots/57
 
@@ -68,7 +68,7 @@ https://t.me/ryukimodsscreenshots/57
 - If you are using KernelSU, you need to disable Unmount Modules by Default in KernelSU app settings and install https://github.com/KernelSU-Modules-Repo/meta-overlayfs or https://github.com/KernelSU-Modules-Repo/magic_mount_rs or https://github.com/KernelSU-Modules-Repo/hybrid_mount or https://github.com/maxsteeel/nomount first depending on ROM compatibility
 - Install One UI Core Magisk Module first: https://github.com/reiryuki/One-UI-Core-Magisk-Module
 - If you want to activate the recents provider, READ Optionals bellow!
-- Install this module https://devuploads.com/2sdzipi01qe9 via Magisk app or Kitsune Mask app or KernelSU app or Apatch app or Recovery if Magisk or Kitsune Mask installed
+- Install this module via Magisk app or Kitsune Mask app or KernelSU app or Apatch app or Recovery if Magisk or Kitsune Mask installed
 - Reboot
 - If you are using KernelSU, you need to allow superuser list manually all package name listed in package.txt (enable show system apps) and reboot afterwards
 - Change your default home to this launcher via Settings app (or you can copy the content of default.sh and paste it to Terminal/Termux app. Type su and grant root first!)
@@ -90,7 +90,6 @@ https://t.me/ryukimodsscreenshots/57
 
 ## Known Issues
 - Edge panels doesn't work
-- Recents provider doesn't launch sometimes
 - Recents tumbnails are blacked out in some ROMs. If your device supports vulkan, this module https://github.com/reiryuki/SKIA-UI-Renderer-Enabler-Magisk-Module may fix that.
 - Does not support navbar overlay in QPR2 ROMs and up if recents provider is activated
 
@@ -101,7 +100,7 @@ https://t.me/ryukimodsscreenshots/57
 ## Credits and Contributors
 - @KaldirimMuhendisi
 - https://t.me/androidryukimodsdiscussions
-- You can contribute ideas about this Magisk Module here: https://t.me/androidappsportdevelopment
+- https://t.me/androidappsportdevelopment
 
 ## Sponsors
 https://t.me/ryukinotes/25
