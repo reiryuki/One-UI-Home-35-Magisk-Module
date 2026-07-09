@@ -15,6 +15,7 @@ Home launcher app by Samsung Electronics Co., Ltd. ported and integrated as a Ma
 ## Changelog
 
 v2.1
+- Prepare /storage/emulated/"$UID"/Android/data/com.sec.android.app.launcher/files directories
 - Fix recents provider doesn't launch sometimes with `su -c setprop persist.disable_recents_animation 1` (For more details, read Troubleshootings below)
 - Resets module folders/files permissions at post-fs-data
 - Move _uninstall.log to /data/adb/logs/
