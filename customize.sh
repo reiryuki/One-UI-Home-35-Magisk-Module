@@ -422,7 +422,12 @@ rm -f `find $MODPATH/system -type f -name extract`
 # hide
 hide_oat
 
-
+# prepare
+DIR=/storage/emulated/"$UID"/Android/data/com.sec.android.app.launcher/files
+ui_print "- Creating directories:"
+ui_print "  $DIR"
+mkdir -p $DIR
+ui_print " "
 
 
 
