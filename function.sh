@@ -32,7 +32,7 @@ if [ "$BOOTMODE" != true ]; then
       || mount -o rw -t auto $BLOCK2$DIR$SLOT $DIR
     fi
   done
-  apex_list
+#  apex_list
   DIRS="/my_product /cache /persist /metadata /cust /klogdump
         $APXS"
   for DIR in $DIRS; do

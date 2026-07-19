@@ -16,6 +16,7 @@ Home launcher app by Samsung Electronics Co., Ltd. ported and integrated as a Ma
 
 v2.2
 - Fix a crash
+- Fix selinux denial
 - Fix bug in cleaner.sh
 
 v2.1
